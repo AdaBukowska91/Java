@@ -47,11 +47,10 @@ public class CalculatorBuilder {
         Calculator calculator = CalculatorApplication.getInstance();
         if (testType.equalsIgnoreCase("API")) {
             operator = CreateApiOperator.createApiOperator(operation, url);
-            calculator.addOperator(operation, operator);
         } else if (testType.equalsIgnoreCase("UI")) {
             operator = CreateSeleniumOperator.createSeleniumOperator(operation, new WebDriverManager(browser), url);
-            calculator.addOperator(operation, operator);
         }
+        calculator.addOperator(operation, operator);
         return calculator;
     }
 }
