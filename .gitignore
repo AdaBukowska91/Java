@@ -1,0 +1,14 @@
+#Files
+.idea/*
+/target/
+
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
