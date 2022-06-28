@@ -1,6 +1,6 @@
 Feature: Calculate formula using Calculator Application
 
-  Scenario Outline: Formula results calculation
+  Scenario Outline: Formula results calculation using CalculatorApplication
     Given I have a formula to calculate with operator <operator>
     When enter <numberX>, <numberY> and operator <operator> to calculate
     Then final calculation result is <result>
